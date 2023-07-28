@@ -17,8 +17,8 @@ jobs:
 
         - name: Sops Binary Installer
           run: | 
-                apt-get update -y
-                apt-get install wget -y
-                apt-get install alien -y
-                wget https://github.com/mozilla/sops/releases/download/v3.7.3/sops-3.7.3-1.x86_64.rpm
-                alien -i sops-3.7.3-1.x86_64.rpm
+                sudo apt-get update -y
+                sudo apt-get install wget -y
+                sudo apt-get install alien -y
+                sudo wget https://github.com/mozilla/sops/releases/download/v3.7.3/sops-3.7.3-1.x86_64.rpm
+                sudo alien -i sops-3.7.3-1.x86_64.rpm
