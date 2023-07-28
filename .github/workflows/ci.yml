@@ -23,3 +23,11 @@ jobs:
         - name: Encrypt Application
           run: |
             sops -e --in-place --age ${{ secrets.PUBLIC_KEY }} src/main/resources/application.yml
+
+        - name: Commit and push changes
+          run: |
+            git config --global user.name "pap-rlxo"
+            git config --global user.email "rlxo6919@chicment.com"
+            git add .
+            git commit -m "encrypt application.yml"
+            git push
