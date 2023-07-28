@@ -22,5 +22,7 @@ jobs:
 
         - name: Set Sops Key
           run: |
+            echo "JJSDFSDF"
+            echo ${{ env.SECRET_KEY }}
             export SOPS_AGE_RECIPIENTS=${{ env.PUBLIC_KEY }}
             export SOPS_AGE_KEY=${{env.SECRET_KEY}}
