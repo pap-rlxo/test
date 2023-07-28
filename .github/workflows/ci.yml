@@ -3,7 +3,7 @@ name: Check and SOPS
 on:
   push:
     branches:
-      - "*"
+      - "action/test"
 jobs:
     build:
       runs-on: ubuntu-latest
