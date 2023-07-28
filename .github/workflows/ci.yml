@@ -32,4 +32,4 @@ jobs:
 
         - name: Encrypt Application
           run: |
-            sops --encrypt --in-place src/main/resources/application.yml
+            sops -e --in-place src/main/resources/application.yml
