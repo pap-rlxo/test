@@ -17,5 +17,5 @@ jobs:
         - name: Sops Binary Installer
           uses: mdgreenwald/mozilla-sops-action@v1.4.1
           with:
-            version: '<version>' # default is latest stable
+            version: default
           id: install
