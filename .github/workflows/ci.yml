@@ -24,3 +24,12 @@ jobs:
           run: |
             export SOPS_AGE_RECIPIENTS=${{ secrets.PUBLIC_KEY }}
             export SOPS_AGE_KEY=${{ secrets.SECRET_KEY }}
+
+        - name: Set Sops Key
+          run: |
+            export SOPS_AGE_RECIPIENTS=${{ secrets.PUBLIC_KEY }}
+            export SOPS_AGE_KEY=${{ secrets.SECRET_KEY }}
+
+        - name: Encrypt Application
+          run: |
+            sops --encrypt --in-place src/main/resources/application.yml
