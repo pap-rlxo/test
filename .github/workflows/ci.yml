@@ -5,11 +5,8 @@ on:
     branches:
       - "action/test"
 jobs:
-    build:
+  pre-commit:
       runs-on: ubuntu-latest
-      strategy:
-        matrix:
-          java-version: [ 17 ]
 
       steps:
         - name: checkout
