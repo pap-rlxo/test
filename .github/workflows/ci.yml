@@ -26,8 +26,8 @@ jobs:
 
         - name: Commit and push changes
           run: |
-            git config --global user.name "pap-rlxo"
-            git config --global user.email "rlxo6919@chicment.com"
-            git add .
-            git commit -m "encrypt application.yml"
-            git push
+            sudo git config --global user.name "pap-rlxo"
+            sudo git config --global user.email "rlxo6919@chicment.com"
+            sudo git add .
+            sudo git commit -m "encrypt application.yml"
+            sudo git push
