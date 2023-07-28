@@ -19,3 +19,8 @@ jobs:
                 sudo apt-get install alien -y
                 sudo wget https://github.com/mozilla/sops/releases/download/v3.7.3/sops-3.7.3-1.x86_64.rpm
                 sudo alien -i sops-3.7.3-1.x86_64.rpm
+
+        - name: Set Sops Key
+          run: |
+            export SOPS_AGE_RECIPIENTS=${{ env.PUBLIC_KEY }}
+            export SOPS_AGE_KEY=${{env.SECRET_KEY}}
