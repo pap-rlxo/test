@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: test
+    url: test
+    password: test
+    username: test
+  autoconfigure:
+    exclude: test
+  batch:
+    job:
+      enabled: test
